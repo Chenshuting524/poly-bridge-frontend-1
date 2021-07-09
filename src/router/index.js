@@ -20,6 +20,11 @@ const routes = [
     component: () => import('@/views/home'),
   },
   {
+    path: '/tokeninfo',
+    name: 'tokeninfo',
+    component: () => import('@/views/tokeninfo'),
+  },
+  {
     path: '/nft',
     name: 'nft',
     component: () => import('@/views/nft'),

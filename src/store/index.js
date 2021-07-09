@@ -3,6 +3,7 @@ import Vuex from 'vuex';
 import chains from './chains';
 import wallets from './wallets';
 import tokenBasics from './tokenBasics';
+import tokenBasicsInfo from './tokenBasicsInfo';
 import tokens from './tokens';
 import tokenMaps from './tokenMaps';
 import transactions from './transactions';
@@ -24,6 +25,7 @@ export default new Vuex.Store({
     balances,
     allowances,
     fees,
-    nftAssetsBasics
+    nftAssetsBasics,
+    tokenBasicsInfo,
   },
 });

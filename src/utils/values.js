@@ -74,6 +74,9 @@ export const CHAINS = [
     explorerUrl: TARGET_MAINNET
       ? 'https://etherscan.io/tx/0x{txHash}'
       : 'https://ropsten.etherscan.io/tx/0x{txHash}',
+    explorerUrlToken: TARGET_MAINNET
+      ? 'https://etherscan.io/token/0x{tokenHash}'
+      : 'https://ropsten.etherscan.io/token/0x{tokenHash}',
     nftexplorerUrl: TARGET_MAINNET
       ? 'https://etherscan.io/tx/0x{txHash}'
       : 'https://ropsten.etherscan.io/tx/0x{txHash}',
@@ -93,6 +96,9 @@ export const CHAINS = [
     explorerUrl: TARGET_MAINNET
       ? 'https://neotube.io/transaction/0x{txHash}'
       : 'https://testnet.neotube.io/transaction/0x{txHash}',
+    explorerUrlToken: TARGET_MAINNET
+      ? 'https://www.oklink.com/okexchain/tokenAddr/0x{tokenHash}'
+      : 'https://www.oklink.com/okexchain-test/tokenAddr/0x{tokenHash}',
     lockContractHash: TARGET_MAINNET
       ? '125c83403763670c215f9c7c815ef759b258a41b'
       : 'cd074cd290acc3d73c030784101afbcf40fd86a1',
@@ -103,6 +109,9 @@ export const CHAINS = [
     explorerUrl: TARGET_MAINNET
       ? 'https://bscscan.com/tx/0x{txHash}'
       : 'https://testnet.bscscan.com/tx/0x{txHash}',
+    explorerUrlToken: TARGET_MAINNET
+      ? 'https://bscscan.com/token/0x{tokenHash}'
+      : 'https://testnet.bscscan.com/token/0x{tokenHash}',
     nftexplorerUrl: TARGET_MAINNET
       ? 'https://bscscan.com/tx/0x{txHash}'
       : 'https://testnet.bscscan.com/tx/0x{txHash}',
@@ -122,6 +131,9 @@ export const CHAINS = [
     explorerUrl: TARGET_MAINNET
       ? 'https://hecoinfo.com/tx/0x{txHash}'
       : 'https://testnet.hecoinfo.com/tx/0x{txHash}',
+    explorerUrlToken: TARGET_MAINNET
+      ? 'https://hecoinfo.com/token/0x{tokenHash}'
+      : 'https://testnet.hecoinfo.com/token/0x{tokenHash}',
     nftexplorerUrl: TARGET_MAINNET
       ? 'https://hecoinfo.com/tx/0x{txHash}'
       : 'https://testnet.hecoinfo.com/tx/0x{txHash}',
@@ -141,6 +153,9 @@ export const CHAINS = [
     explorerUrl: TARGET_MAINNET
       ? 'https://www.oklink.com/okexchain/tx/0x{txHash}'
       : 'https://www.oklink.com/okexchain-test/tx/0x{txHash}',
+    explorerUrlToken: TARGET_MAINNET
+      ? 'https://www.oklink.com/okexchain/tokenAddr/0x{tokenHash}'
+      : 'https://www.oklink.com/okexchain-test/tokenAddr/0x{tokenHash}',
     lockContractHash: TARGET_MAINNET
       ? '0xbd4a08577476A521C41a21EF3f00b045b74175d5'
       : //  : '0x5598226aD2E8991deEFD03203739C87BdF6e6D03',
@@ -154,6 +169,9 @@ export const CHAINS = [
     explorerUrl: TARGET_MAINNET
       ? 'https://explorer.ont.io/transaction/{txHash}'
       : 'https://explorer.ont.io/transaction/{txHash}/testnet',
+    explorerUrlToken: TARGET_MAINNET
+      ? 'https://www.oklink.com/okexchain/tokenAddr/0x{tokenHash}'
+      : 'https://www.oklink.com/okexchain-test/tokenAddr/0x{tokenHash}',
     lockContractHash: TARGET_MAINNET
       ? 'c93837e82178d406af8c84e1841c6960af251cb5'
       : 'a5c101afa9e04e9dd2c912983795005a49e02efa',
