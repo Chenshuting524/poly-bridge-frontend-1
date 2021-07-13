@@ -43,13 +43,13 @@ export default {
       max: 'MAX',
       balance: 'Balance',
       fee: 'Fee',
-      feeTooltip:
-        'Transaction fee on target chain',
+      feeTooltip: 'Transaction fee on target chain',
       connectWallet: 'Connect Wallet',
       historyPrefix: 'You can view your',
       historyLink: 'history',
-      maxamount: "Max Available Amount",
-      maxamountTooltip: "The largest available number of cross-chain assets on the currently selected target chain (estimated value)"
+      maxamount: 'Max Available Amount',
+      maxamountTooltip:
+        'The largest available number of cross-chain assets on the currently selected target chain (estimated value)',
     },
     selectTokenBasic: {
       title: 'Select Asset',
@@ -76,6 +76,14 @@ export default {
       packing: 'Transaction is packing on {chainName}. Please be patient...',
       hash: 'Hash: {hash}',
     },
+  },
+  tokens: {
+    token: 'Token',
+    price: 'Current Price ($)',
+    info: 'Contracts',
+    volume: 'Volume ($)',
+    count: 'Count',
+    amount: 'Amount',
   },
   transactions: {
     index: {
@@ -127,6 +135,7 @@ export default {
       [ChainId.Poly]: 'Poly',
       [ChainId.Eth]: 'Ethereum',
       [ChainId.Neo]: 'Neo',
+      [ChainId.N3]: 'N3',
       [ChainId.Bsc]: 'BSC',
       [ChainId.Heco]: 'Heco',
       [ChainId.Ont]: 'Ontology',

@@ -13,6 +13,7 @@ export const ChainId = {
   Poly: 0,
   Eth: 2,
   Ont: 3,
+  N3: 11,
   Neo: TARGET_MAINNET ? 4 : 5,
   Bsc: TARGET_MAINNET ? 6 : 79,
   Heco: 7,

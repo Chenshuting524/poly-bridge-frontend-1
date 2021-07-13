@@ -48,16 +48,16 @@ export default {
     const tokens = _.flatMap(tokenBasics, tokenBasic => tokenBasic.tokens || []);
     return { tokenBasics, tokens };
   },
-  async getTokenBasicsInfo({ pageNo, pageSize }) {
+  async getTokenBasicsInfo({ pageNo, pageSize, order }) {
     const result = await request({
       method: 'post',
       url: '/tokenbasicsinfo',
       data: {
         PageNo: pageNo,
         PageSize: pageSize,
+        Order: order,
       },
     });
-    console.log(result);
     return result;
   },
   async getTokenMaps({ fromChainId, fromTokenHash }) {

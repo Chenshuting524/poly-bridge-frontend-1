@@ -13,9 +13,8 @@ export default {
     },
   },
   actions: {
-    async getTokenBasicsInfo({ commit }, { pageNo, pageSize }) {
-      const tokenBasicsInfo = await httpApi.getTokenBasicsInfo({ pageNo, pageSize });
-      debugger;
+    async getTokenBasicsInfo({ commit }, { pageNo, pageSize, order }) {
+      const tokenBasicsInfo = await httpApi.getTokenBasicsInfo({ pageNo, pageSize, order });
       commit('setTokenBasicsInfo', tokenBasicsInfo);
     },
   },

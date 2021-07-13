@@ -11,30 +11,18 @@
         <div class="table-wrapper">
           <ElTable :data="tokenInfo.TokenBasics" class="table">
             <ElTableColumn width="20" />
-            <ElTableColumn
-              #default="{ row }"
-              :label="$t('transactions.index.fromChain')"
-              min-width="150"
-            >
+            <ElTableColumn #default="{ row }" :label="$t('tokens.token')">
               <div class="chain">
-                <img class="chain-icon" :src="row.meta ? row.metarow.meta : defaultLogo" />
+                <img class="chain-icon" :src="row.Meta ? row.Meta : defaultLogo" />
                 <span>{{ row.Name }}</span>
               </div>
             </ElTableColumn>
-            <ElTableColumn
-              #default="{ row }"
-              :label="$t('transactions.index.fromChain')"
-              min-width="150"
-            >
+            <ElTableColumn #default="{ row }" :label="$t('tokens.price')">
               <div class="chain">
-                <span>{{ row.Price }}</span>
+                <span>{{ $formatNumber(row.Price) }}</span>
               </div>
             </ElTableColumn>
-            <ElTableColumn
-              #default="{ row }"
-              :label="$t('transactions.index.fromChain')"
-              min-width="150"
-            >
+            <ElTableColumn #default="{ row }" :label="$t('tokens.info')" min-width="150">
               <div class="chain" v-for="(item, index) in row.Tokens" :key="index">
                 <span>{{ $formatEnum(item.ChainId, { type: 'chainName' }) }}</span>
                 <span>
@@ -57,13 +45,19 @@
                 </span>
               </div>
             </ElTableColumn>
-            <ElTableColumn
-              #default="{ row }"
-              :label="$t('transactions.index.fromChain')"
-              min-width="150"
-            >
+            <ElTableColumn #default="{ row }" :label="$t('tokens.volume')" min-width="80">
               <div class="chain">
-                <span>{{ row.Price }}</span>
+                <span>{{ $formatNumber(row.TotalVolume) }}</span>
+              </div>
+            </ElTableColumn>
+            <ElTableColumn #default="{ row }" :label="$t('tokens.count')" min-width="80">
+              <div class="chain">
+                <span>{{ $formatNumber(row.TotalCount) }}</span>
+              </div>
+            </ElTableColumn>
+            <ElTableColumn #default="{ row }" :label="$t('tokens.amount')" min-width="80">
+              <div class="chain">
+                <span>{{ $formatNumber(row.TotalAmount) }}</span>
               </div>
             </ElTableColumn>
             <ElTableColumn width="20" />
@@ -111,6 +105,12 @@ export default {
       return this.$store.getters.tokenBasicsInfo;
     },
   },
+  watch: {
+    page() {
+      this.tokenInfo = {};
+      this.getInfo();
+    },
+  },
   mounted() {
     this.getInfo();
   },
@@ -120,8 +120,9 @@ export default {
     },
     async getInfo() {
       await this.$store.dispatch('getTokenBasicsInfo', {
-        pageNo: this.page,
+        pageNo: this.page - 1,
         pageSize: this.pageSize,
+        order: 'total_count',
       });
     },
   },
