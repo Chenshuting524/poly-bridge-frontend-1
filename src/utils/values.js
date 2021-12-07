@@ -2,14 +2,14 @@ import { WalletName, ChainId } from './enums';
 import { TARGET_MAINNET } from './env';
 
 export const HTTP_BASE_URL = TARGET_MAINNET
-  ? '124.156.237.147:8085/v1/bridge/v1'
-  : '124.156.237.147:8085/v1/bridge/v1';
+  ? 'http://124.156.237.147:8085/v1/bridge/v1'
+  : 'http://124.156.237.147:8085/v1/bridge/v1';
 //    'https://bridge.poly.network/merge/v1/bridge'
 //  : 'https://bridge.poly.network/testnet/merge/v1/bridge';
 
 export const HTTP_NFT_BASE_URL = TARGET_MAINNET
-  ? '124.156.237.147:8085/v1/bridge/nft/v1'
-  : '124.156.237.147:8085/v1/bridge/nft/v1';
+  ? 'http://124.156.237.147:8085/v1/bridge/nft/v1'
+  : 'http://124.156.237.147:8085/v1/bridge/nft/v1';
 //    'https://bridge.poly.network/merge/v1/nft'
 //  : 'https://bridge.poly.network/testnet/merge/v1/nft';
 
@@ -90,11 +90,11 @@ export const CHAINS = [
   {
     id: ChainId.Poly,
     explorerUrl: TARGET_MAINNET
-      ? '124.156.237.147:8085/v1/explorer/tx/{txHash}'
-      : '124.156.237.147:8085/v1/explorer/tx/{txHash}',
+      ? 'http://124.156.237.147:8085/v1/explorer/tx/{txHash}'
+      : 'http://124.156.237.147:8085/v1/explorer/tx/{txHash}',
     nftexplorerUrl: TARGET_MAINNET
-      ? '124.156.237.147:8085/v1/explorer/nfttx/{txHash}'
-      : '124.156.237.147:8085/v1/explorer/nfttx/{txHash}',
+      ? 'http://124.156.237.147:8085/v1/explorer/nfttx/{txHash}'
+      : 'http://124.156.237.147:8085/v1/explorer/nfttx/{txHash}',
   },
   {
     id: ChainId.Eth,
