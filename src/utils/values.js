@@ -2,14 +2,14 @@ import { WalletName, ChainId } from './enums';
 import { TARGET_MAINNET } from './env';
 
 export const HTTP_BASE_URL = TARGET_MAINNET
-  ? 'http://124.156.237.147:8085/bridge/v1'
-  : 'http://124.156.237.147:8085/bridge/v1';
+  ? 'http://124.156.237.147:8085/v1/bridge'
+  : 'http://124.156.237.147:8085/v1/bridge';
 //    'https://bridge.poly.network/merge/v1/bridge'
 //  : 'https://bridge.poly.network/testnet/merge/v1/bridge';
 
 export const HTTP_NFT_BASE_URL = TARGET_MAINNET
-  ? 'http://124.156.237.147:8085/bridge/nft/v1'
-  : 'http://124.156.237.147:8085/bridge/nft/v1';
+  ? 'http://124.156.237.147:8085/v1/bridge/nft'
+  : 'http://124.156.237.147:8085/v1/bridge/nft';
 //    'https://bridge.poly.network/merge/v1/nft'
 //  : 'https://bridge.poly.network/testnet/merge/v1/nft';
 
