@@ -30,6 +30,8 @@ export const ChainId = {
   goerli: TARGET_MAINNET ? 502 : 502,
   rinkeby: TARGET_MAINNET ? 402 : 402,
   Kovan: TARGET_MAINNET ? 302 : 302,
+  MainChain: TARGET_MAINNET ? 1 : 1,
+  SideChain:TARGET_MAINNET ? 77 : 77,
 };
 
 export const SingleTransactionStatus = {
