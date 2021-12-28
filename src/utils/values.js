@@ -308,6 +308,61 @@ export const CHAINS = [
       ? 'c93837e82178d406af8c84e1841c6960af251cb5'
       : 'a5c101afa9e04e9dd2c912983795005a49e02efa',
   },
+  {
+    id: ChainId.MainChain,
+    nativeFee: true,
+    icon: require('@/assets/svg/ONT.svg'),
+    explorerUrl: TARGET_MAINNET
+      ? 'https://explorer.ont.io/transaction/{txHash}'
+      : 'https://explorer.ont.io/transaction/{txHash}/testnet',
+    lockContractHash: TARGET_MAINNET
+      ? 'c93837e82178d406af8c84e1841c6960af251cb5'
+      : 'a5c101afa9e04e9dd2c912983795005a49e02efa',
+  },
+   {
+    id: ChainId.SideChain,
+    nativeFee: true,
+    icon: require('@/assets/svg/ONT.svg'),
+    explorerUrl: TARGET_MAINNET
+      ? 'https://explorer.ont.io/transaction/{txHash}'
+      : 'https://explorer.ont.io/transaction/{txHash}/testnet',
+    lockContractHash: TARGET_MAINNET
+      ? 'c93837e82178d406af8c84e1841c6960af251cb5'
+      : 'a5c101afa9e04e9dd2c912983795005a49e02efa',
+  },
+  {
+    id: ChainId.rinkeby,
+    nativeFee: true,
+    icon: require('@/assets/svg/ONT.svg'),
+    explorerUrl: TARGET_MAINNET
+      ? 'https://explorer.ont.io/transaction/{txHash}'
+      : 'https://explorer.ont.io/transaction/{txHash}/testnet',
+    lockContractHash: TARGET_MAINNET
+      ? 'c93837e82178d406af8c84e1841c6960af251cb5'
+      : 'a5c101afa9e04e9dd2c912983795005a49e02efa',
+  },
+  {
+    id: ChainId.goerli,
+    nativeFee: true,
+    icon: require('@/assets/svg/ONT.svg'),
+    explorerUrl: TARGET_MAINNET
+      ? 'https://explorer.ont.io/transaction/{txHash}'
+      : 'https://explorer.ont.io/transaction/{txHash}/testnet',
+    lockContractHash: TARGET_MAINNET
+      ? 'c93837e82178d406af8c84e1841c6960af251cb5'
+      : 'a5c101afa9e04e9dd2c912983795005a49e02efa',
+  },
+  {
+    id: ChainId.kovan,
+    nativeFee: true,
+    icon: require('@/assets/svg/ONT.svg'),
+    explorerUrl: TARGET_MAINNET
+      ? 'https://explorer.ont.io/transaction/{txHash}'
+      : 'https://explorer.ont.io/transaction/{txHash}/testnet',
+    lockContractHash: TARGET_MAINNET
+      ? 'c93837e82178d406af8c84e1841c6960af251cb5'
+      : 'a5c101afa9e04e9dd2c912983795005a49e02efa',
+  },
 ];
 
 export const UNKNOWN_ICON = require('@/assets/svg/unknown.svg');
