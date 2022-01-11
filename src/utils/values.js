@@ -28,6 +28,11 @@ export const WALLETS = [
       ChainId.Optimistic,
       ChainId.Fantom,
       ChainId.Avalanche,
+      ChainId.MainChain,
+      ChainId.SideChain,
+      ChainId.goerli,
+      ChainId.rinkeby,
+      ChainId.Kovan
     ],
     icon: require('@/assets/svg/meta-mask.svg'),
     downloadUrl:
@@ -311,57 +316,60 @@ export const CHAINS = [
   {
     id: ChainId.MainChain,
     nativeFee: true,
-    icon: require('@/assets/svg/ONT.svg'),
+    icon: require('@/assets/svg/eth.svg'),
     explorerUrl: TARGET_MAINNET
-      ? 'https://explorer.ont.io/transaction/{txHash}'
-      : 'https://explorer.ont.io/transaction/{txHash}/testnet',
+      ? 'https://etherscan.io/tx/0x{txHash}'
+      : 'https://ropsten.etherscan.io/tx/0x{txHash}',
+    nftexplorerUrl: TARGET_MAINNET
+      ? 'https://etherscan.io/tx/0x{txHash}'
+      : 'https://ropsten.etherscan.io/tx/0x{txHash}',
     lockContractHash: TARGET_MAINNET
-      ? 'c93837e82178d406af8c84e1841c6960af251cb5'
-      : 'a5c101afa9e04e9dd2c912983795005a49e02efa',
+      ? '0x5D315b2f0C63890eFbfB37c26E0ae0807e72bCc9'
+      : '0x5D315b2f0C63890eFbfB37c26E0ae0807e72bCc9',
   },
    {
     id: ChainId.SideChain,
     nativeFee: true,
-    icon: require('@/assets/svg/ONT.svg'),
+    icon: require('@/assets/svg/eth.svg'),
     explorerUrl: TARGET_MAINNET
-      ? 'https://explorer.ont.io/transaction/{txHash}'
-      : 'https://explorer.ont.io/transaction/{txHash}/testnet',
+      ? 'https://etherscan.io/tx/0x{txHash}'
+      : 'https://ropsten.etherscan.io/tx/0x{txHash}',
     lockContractHash: TARGET_MAINNET
-      ? 'c93837e82178d406af8c84e1841c6960af251cb5'
-      : 'a5c101afa9e04e9dd2c912983795005a49e02efa',
+      ? '0x7d79D936DA7833c7fe056eB450064f34A327DcA8'
+      : '0x3b2749D4Ca77837730e8ff8318DC9cc688595E95',
   },
   {
     id: ChainId.rinkeby,
     nativeFee: true,
-    icon: require('@/assets/svg/ONT.svg'),
+    icon: require('@/assets/svg/eth.svg'),
     explorerUrl: TARGET_MAINNET
-      ? 'https://explorer.ont.io/transaction/{txHash}'
-      : 'https://explorer.ont.io/transaction/{txHash}/testnet',
+      ? 'https://etherscan.io/tx/0x{txHash}'
+      : 'https://ropsten.etherscan.io/tx/0x{txHash}',
     lockContractHash: TARGET_MAINNET
-      ? 'c93837e82178d406af8c84e1841c6960af251cb5'
-      : 'a5c101afa9e04e9dd2c912983795005a49e02efa',
+      ? '0x7d79D936DA7833c7fe056eB450064f34A327DcA8'
+      : '0x3b2749D4Ca77837730e8ff8318DC9cc688595E95',
   },
   {
     id: ChainId.goerli,
     nativeFee: true,
-    icon: require('@/assets/svg/ONT.svg'),
+    icon: require('@/assets/svg/eth.svg'),
     explorerUrl: TARGET_MAINNET
-      ? 'https://explorer.ont.io/transaction/{txHash}'
-      : 'https://explorer.ont.io/transaction/{txHash}/testnet',
+      ? 'https://etherscan.io/tx/0x{txHash}'
+      : 'https://ropsten.etherscan.io/tx/0x{txHash}',
     lockContractHash: TARGET_MAINNET
-      ? 'c93837e82178d406af8c84e1841c6960af251cb5'
-      : 'a5c101afa9e04e9dd2c912983795005a49e02efa',
+      ? '0x7d79D936DA7833c7fe056eB450064f34A327DcA8'
+      : '0x3b2749D4Ca77837730e8ff8318DC9cc688595E95',
   },
   {
-    id: ChainId.kovan,
+    id: ChainId.Kovan,
     nativeFee: true,
-    icon: require('@/assets/svg/ONT.svg'),
+    icon: require('@/assets/svg/eth.svg'),
     explorerUrl: TARGET_MAINNET
-      ? 'https://explorer.ont.io/transaction/{txHash}'
-      : 'https://explorer.ont.io/transaction/{txHash}/testnet',
+      ? 'https://etherscan.io/tx/0x{txHash}'
+      : 'https://ropsten.etherscan.io/tx/0x{txHash}',
     lockContractHash: TARGET_MAINNET
-      ? 'c93837e82178d406af8c84e1841c6960af251cb5'
-      : 'a5c101afa9e04e9dd2c912983795005a49e02efa',
+      ? '0x7d79D936DA7833c7fe056eB450064f34A327DcA8'
+      : '0x3b2749D4Ca77837730e8ff8318DC9cc688595E95',
   },
 ];
 
